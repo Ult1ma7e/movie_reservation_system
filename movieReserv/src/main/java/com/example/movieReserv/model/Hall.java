@@ -10,12 +10,11 @@ public class Hall {
     @GeneratedValue
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = true, updatable = false)
     private String name;
 
     @Column(nullable = false, name = "total_capacity")
     private Integer totalCapacity;
-
 
     public Hall() {
     }
